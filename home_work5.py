@@ -5,9 +5,9 @@ def test_demoqa_form():
     browser.open('https://demoqa.com/automation-practice-form')
     browser.driver.execute_script("document.querySelector('.body-height').style.transform='scale(.50)'")
 
-    browser.element('#firstName').type('firstName')
-    browser.element('#lastName').type('lastName')
-    browser.element('#userEmail').type('test@gmail.com')
+    browser.element('#firstName').type('Testova')
+    browser.element('#lastName').type('Test')
+    browser.element('#userEmail').type('test@mail.ru')
     browser.element('[for="gender-radio-2"]').click()
     browser.element('#userNumber').type('7777777777')
 

@@ -7,7 +7,7 @@ path = os.path.join(dirname(dirname(abspath(__file__))), "resources")
 
 def test_demoqa_form():
 
-    browser.open('https://demoqa.com/automation-practice-form')
+    browser.open('/automation-practice-form')
     browser.driver.execute_script("document.querySelector('.body-height').style.transform='scale(.50)'")
 
     browser.element('#firstName').type('firstName')

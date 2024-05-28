@@ -30,7 +30,7 @@ def test_demoqa_form():
     browser.element('#submit').press_enter()
 
     browser.element('#example-modal-sizes-title-lg').should(have.text('Thanks for submitting the form'))
-    browser.element('.table-responsive').all('tr>td').even.should(have.exact_texts('firstName lastName',
+    browser.element('.table-responsive').all("tr").all("td").even.should(have.exact_texts('firstName lastName',
                                                                                      'test@gmail.com',
                                                                                      'Female',
                                                                                      '7777777777',
@@ -40,4 +40,7 @@ def test_demoqa_form():
                                                                                      '_2224643_orig.jpg',
                                                                                      'Current Address',
                                                                                      'Rajasthan Jaipur'))
+
+
+
 
